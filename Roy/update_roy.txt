@@ -1,0 +1,19 @@
+
+*** This is an internal release note and should not be distributed outside
+    the company without proper consent.
+
+
+-------------------------------------------------------------------------------
+
+		Evilnut Website - Roy
+
+-------------------------------------------------------------------------------
+
+              (c) Copyright EvilNut Inc., 2013-2014
+
+2014-10-06
+-------------------------------------------------------------------------------
+- insert the implemented slidershow
+- release new pages: index.html, web-design.html
+- copy of our website's template
+- keep header and footer and modify body for each page except index.html
