@@ -11,9 +11,15 @@
 
               (c) Copyright EvilNut Inc., 2013-2014
 
-2014-10-06
+2014-10-16
 -------------------------------------------------------------------------------
 - insert the implemented slidershow
-- release new pages: index.html, web-design.html
+- create new pages: index.html, web-design.html, ...
 - copy of our website's template
 - keep header and footer and modify body for each page except index.html
+
+
+2014-10-17
+-------------------------------------------------------------------------------
+- update top navbar 
+- update the layout in service pages

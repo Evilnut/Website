@@ -56,6 +56,7 @@
         <!-- end remprod -->
 
         <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script>
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
         <!-- Fonts -->
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
@@ -268,7 +269,7 @@
 
                 <!-- Header -->
                 <header id="header">
-                    <div class="container">
+                    <div class="container" >
 
                         <div class="row header">
 
@@ -578,7 +579,7 @@
                                 <div class="caption fadeout fade" data-x="86"  data-y="146"
                                      data-speed="700" data-start="1000"  data-nextslideatend="true">
                                     <!--                    <img src="images/placeholders/rev-full2-ipad.jpg" alt=""/>-->
-                                    <iframe src="http://www.youtube.com/embed/jksNTsBaebA?hd=1&amp;wmode=opaque&amp;controls=0&amp;showinfo=0" width="326" height="255" style='border: 0; frameborder:"0"'></iframe>
+                                    <iframe src="http://www.youtube.com/embed/RspD6_Yt1kU?hd=1&amp;wmode=opaque&amp;controls=0&amp;showinfo=0" width="326" height="255" style='border: 0; frameborder:"0"'></iframe>
 
                                 </div>
 
@@ -1287,8 +1288,30 @@
                 </div>
             </footer>
 
+			
+			
+		
         </div><!-- wrapper end -->
-
+		
+		<!-- Navbar fixed on the top after scrolling from top -->
+		<script>
+		$(document).ready(function() {
+			$(document).scroll(function () {
+				var scroll = $(this).scrollTop();
+				var topDist = $("#header").position();
+				if (scroll > topDist.top) {
+					$('#header').css({"position":"fixed","top":"0", "z-index":"100", "background-color":"white", "height":"70px", "width":"100%", "opacity":"0.8"}).fadeIn(1000);
+					$('#header').css({"position":"fixed","top":"0", "z-index":"100", "background-color":"white", "height":"70px", "width":"100%", "opacity":"80%"}).fadeIn(1000);
+					$('.logo').css({"top":"-5px"});
+					console.log('fuck');
+				} else {
+					$('#header').css({"position":"static","top":"auto"});
+				}
+			});
+		});
+		</script>
+		<!-- navbar end -->
+		
         <script type="text/javascript" src="js/_jq.js"></script>
 
         <script type="text/javascript" src="js/_jquery.placeholder.js"></script>
