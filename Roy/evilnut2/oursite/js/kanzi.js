@@ -460,13 +460,14 @@ function easyTabsZeina(selector, options) {
 var map;
 function contactusMap() {
 
-    var myLatlng, mapOptions, marker;
-    var myLatlng = new google.maps.LatLng(-37.817590, 144.965188);
+    var myLatlng, myLatlng2, mapOptions, marker, marker2;
+    var myLatlng = new google.maps.LatLng(49.2290606,-122.9991594);
+    var myLatlng2 = new google.maps.LatLng(49.1302295,-123.0915985);
 
     mapOptions = {
         zoom: 11,
         center: myLatlng,
-        scrollwheel: false,
+        scrollwheel: true,
         mapTypeId: google.maps.MapTypeId.ROADMAP
     };
 
@@ -475,7 +476,13 @@ function contactusMap() {
     marker = new google.maps.Marker({
         position: myLatlng,
         map: map,
-        title: 'Envato'
+        title: 'Burnaby Branch'
+    });
+
+    marker2 = new google.maps.Marker({
+        position: myLatlng2,
+        map: map,
+        title: 'Richmond Branch'
     });
 }
 
