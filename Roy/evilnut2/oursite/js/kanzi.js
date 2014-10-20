@@ -467,7 +467,7 @@ function contactusMap() {
     mapOptions = {
         zoom: 11,
         center: myLatlng,
-        scrollwheel: true,
+        scrollwheel: false,
         mapTypeId: google.maps.MapTypeId.ROADMAP
     };
 
