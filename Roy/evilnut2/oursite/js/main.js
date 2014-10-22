@@ -9,7 +9,7 @@ $(document).ready(function(){
     // Store
     //localStorage.setItem("lang", "en");
 	
-	$(".english-language-button").hide(1);
+	$(".english-language-button").hide();
     // Retrieve   
 	
 	if( localStorage.getItem("lang") == "")
@@ -20,16 +20,16 @@ $(document).ready(function(){
 	else if(localStorage.getItem("lang") == "ch")
 	{
 		currLang = localStorage.getItem("lang"); 
-		$(".english-language-button").show(1);
-		$(".chinese-language-button").hide(1);
+		$(".english-language-button").show();
+		$(".chinese-language-button").hide();
 		g_stringHelper.init();
 		g_stringHelper.updateUI();
 	}
 	else if(localStorage.getItem("lang") == "en")
 	{
 		currLang = localStorage.getItem("lang"); 
-		$(".english-language-button").hide(1);
-		$(".chinese-language-button").show(1);
+		$(".english-language-button").hide();
+		$(".chinese-language-button").show();
 		g_stringHelper.init();
 		g_stringHelper.updateUI();
 	}
