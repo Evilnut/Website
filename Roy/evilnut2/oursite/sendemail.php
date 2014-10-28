@@ -1,3 +1,43 @@
+<?php 
+if(isset($_POST['submit'])){
+	header( "refresh:10;url=http://www.evilnut.ca" );
+    $to = "service@evilnut.ca"; // this is your Email address
+    $from = $_POST['email']; // this is the sender's Email address
+    $first_name = $_POST['first_name'];
+    //$last_name = $_POST['last_name'];
+    $subject = $_POST['subject'];
+    $subject2 = "Copy of your form submission";
+    $message = $first_name. " wrote the following:" . "\n\n" . $_POST['message'];
+    $message2 = "Here is a copy of your message " . $first_name . "\n\n" . $_POST['message'];
+
+    $headers = "From:" . $from;
+    $headers2 = "From:" . $to;
+    $send = mail($to,$subject,$message,$headers);
+    mail($from,$subject2,$message2,$headers2); // sends a copy of the message to the sender
+	
+	
+	if ($send)
+	{
+		
+		/**
+		echo "<script>
+		alert(\"Mail Sent. Thank you " . $first_name . ", we will contact you shortly.\");
+		</script>";
+		echo "Mail Sent. Thank you " . $first_name . ", we will contact you shortly.";
+		**/
+		
+		// You can also use header('Location: thank_you.php'); to redirect to another page.
+		$title = "Thank you";
+		$response = "Mail Sent. Thank you " . $first_name . ", we will contact you shortly.";
+	}
+	else
+	{
+		$title = "bad";
+		$response = "We encountered an error sending your mail";
+		
+	}	
+}
+?>
 <!DOCTYPE html>
 <!--[if lt IE 7]>
 <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
@@ -425,7 +465,7 @@
                 </div>
             </div>
 
- <div class="loading-container">
+			<div class="loading-container">
                 <div class="spinner">
                     <div class="double-bounce1"></div>
                     <div class="double-bounce2"></div>
@@ -433,164 +473,27 @@
             </div>
 
 
-            <div class="content-wrapper hide-until-loading">
-                <!-- Contact Map -->
-
-                <div class="contact-map3" id="contact_map">
-
-                </div>
-
-
-                            <!-- Contact Map -->
-                <div class="body-wrapper">
+            <div class="content-wrapper hide-until-loading"><div class="body-wrapper">
                     <div class="container">
                         <div class="row">
-                            <div class="col-md-8 col-sm-8">
-                                <div class="contact-body">
-                                    <h3 class="h3-body-title">
-                                        Leave A Message
-                                    </h3>
-                                    <p class="body_paragraph contact-paragraph">
-                                        We’d love to hear from you and answer any questions you have about Evilnut Creative Technology. Contact us anytime at  service@evilnut.ca  or  +1(604)336-6018.
-                                    </p>
-                                    <p>Please fill out the form below. An Evilnut representative will contact you shortly after submission.</p>
+                            <div class="col-md-12 col-sm-12 animated" data-animtype="fadeInUp"
+                                 data-animrepeat="0"
+                                 data-speed="1s"
+                                 data-delay="0.4s">
+                                <h2 class="h2-section-title"><?php echo $title; ?></h2>
+                                <div class="i-section-title">
+                                    <i class="icon-feather">
 
-                                    <form class="form-wrapper" id="contact-form" method="post" action="sendemail.php" role="form" novalidate>
-
-
-                                        <div class="form-group" >
-                                            <div class="row">
-                                                <div class="col-xs-7">
-                                                    <label for="name">
-                                                        Name *
-                                                    </label>
-                                                    <input type="text" id="name" name="first_name" class="form-control" data-errmsg="Name is required."
-                                                           minlength="2" placeholder="Your Name" required/>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="form-group">
-                                            <div class="row">
-                                                <div class="col-xs-7">
-                                                    <label for="email">
-                                                        Email *
-                                                    </label>
-                                                    <input type="text" id="email" name="email" class="form-control" data-errmsg="Email is required."
-                                                           minlength="2" placeholder="Your Email" required/>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="form-group">
-                                            <div class="row">
-                                                <div class="col-xs-7">
-                                                    <label for="message">
-                                                        Subject
-                                                    </label>
-                                                    <input type="text" id="subject" name="subject" class="form-control"
-                                                           placeholder="Your Subject"/>
-                                                </div>
-                                            </div>
-                                        </div>
-
-
-                                        <div class="form-group">
-                                            <div class="row">
-                                                <div class="col-xs-8">
-                                                    <label for="message">
-                                                        Message *
-                                                    </label>
-                                                    <textarea id="message" name="message" class="form-control" data-errmsg="Message is required."
-                                                              placeholder="Your Message" rows="3" required></textarea>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="row">
-                                            <div class="col-md-2 col-sm-2 offset2">
-                                                <input type="submit" name="submit" value="Submit" class="btn btn-lg" />
-                                            </div>
-                                        </div>
-
-                                    </form>
+                                    </i>
                                 </div>
+								<p class="text-center"><?php echo $response; ?></p>
+								<p class="text-center">Redirecting to home page in <span id="countdown"></span> seconds...</p>
                             </div>
-                            <div class="col-md-3 col-sm-3 col-md-offset-1 col-sm-offset-1">
-                                <div class="sidebar">
-
-
-                                    <div class="sidebar-block">
-                                        <h3 class="h3-sidebar-title">
-                                            Contact Us
-                                        </h3>
-                                        <div class="sidebar-icon-item">
-                                            <i class="icon-phone"></i> +1(604)336-6018
-                                        </div>
-                                        <div class="sidebar-icon-item">
-                                            <i class="icon-email"></i> service@evilnut.ca
-                                        </div>
-                                        <div class="sidebar-icon-item">
-                                            <i class="icon-home"></i> 202-6125 Sussex Ave, Burnaby, B.C.
-                                        </div>
-                                    </div>
-
-                                    <div class="sidebar-block">
-                                        <h3 class="h3-sidebar-title">
-                                            MARKETING DEPARTMENT
-                                        </h3>
-                                        <p>
-                                            <strong>Address: </strong>135-11300 No.5 Road, Richmond, B.C.
-                                            <br />
-                                            <strong>Phone:</strong> +1(604)336-6018
-                                            <br />
-                                            <strong>Email: </strong>service@evilnut.ca
-                                        </p>
-                                    </div>
-                                    <div class="sidebar-block">
-                                        <h3 class="h3-sidebar-title">
-                                            Socials
-                                        </h3>
-
-
-                                        <div class="social-icons">
-
-                                            <ul>
-                                                <li>
-                                                    <a href="#" title="paypal" target="_blank" class="social-media-icon paypal-icon">paypal</a>
-                                                </li>
-                                                <li>
-                                                    <a href="#" title="googleplus" target="_blank" class="social-media-icon googleplus-icon">googleplus</a>
-                                                </li>
-                                                <li>
-                                                    <a href="#" title="reddit" target="_blank" class="social-media-icon reddit-icon">reddit</a>
-                                                </li>
-                                                <li>
-                                                    <a href="#" title="flickr" target="_blank" class="social-media-icon flickr-icon">flickr</a>
-                                                </li>
-                                                <li>
-                                                    <a href="#" title="youtube" target="_blank" class="social-media-icon youtube-icon">youtube</a>
-                                                </li>
-                                                <li>
-                                                    <a href="#" title="soundcloud" target="_blank" class="social-media-icon soundcloud-icon">soundcloud</a>
-                                                </li>
-                                                <li>
-                                                    <a href="#" title="facebook" target="_blank" class="social-media-icon facebook-icon">facebook</a>
-                                                </li>
-                                                <li>
-                                                    <a href="#" title="lastfm" target="_blank" class="social-media-icon lastfm-icon">lastfm</a>
-                                                </li>
-
-                                            </ul>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+							
                         </div>
-                    </div>
-                </div>
-            </div>
+					</div>
+				</div>
+			</div>
 
                                   
 						
@@ -735,7 +638,23 @@
         });
         </script>
         <!-- navbar end -->
-
+		
+		<script>
+		var counter = 10;
+		var interval = setInterval(function() {
+		counter--;
+		// Display 'counter' wherever you want to display it.
+		$('#countdown').text(counter);
+		console.log(counter);
+		/**
+		if (counter == ) {
+			// Display a login box
+			clearInterval(interval);
+		}
+		**/
+		}, 1000);
+		</script>
+		
         <script src="js/activeaxon_menu.js" type="text/javascript"></script> 
         <script src="js/animationEnigne.js" type="text/javascript"></script> 
         <script src="js/bootstrap.min.js" type="text/javascript"></script> 
