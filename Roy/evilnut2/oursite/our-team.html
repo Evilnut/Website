@@ -65,6 +65,10 @@
         <script type="text/javascript" src="js/respond.js"></script>
         <![endif]-->
         <link rel="stylesheet" href="css/color-chooser.css">
+        <!-- Translate toolkit[ -->
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+        <script type="text/javascript" src="js/stringHelper.js"></script>
     </head>
     <body>
 
@@ -218,15 +222,11 @@
                             <div class="col-sm-7">
                                 <div class="call-us top-bar-block">
                                     <i class="icon-phone"></i>
-                                    <span>
-                                        Call us at +1(604)336-6018
-                                    </span>
+                                    <span class="strCallUsAt"></span>
                                 </div>
                                 <div class="mail-us top-bar-block">
                                     <i class="icon-email"></i>                            
-                                    <span>
-                                        E-mail: service@evilnut.ca
-                                    </span>                            
+                                    <span class="strEmailUsAt"></span>                           
                                 </div>
 
                             </div>
@@ -243,6 +243,12 @@
                                 <!-- //Search Box// -->
                                 <div class="social-icons">
                                     <ul>
+                                        <li class="chinese-language-button">
+                                            <a href="#"><strong><span class="strChinese"></span></strong></a>
+                                        </li>
+                                        <li href="" class="english-language-button">
+                                            <a href="#" ><strong><span class="strEnglish"></span></strong></a>
+                                        </li>
                                         <li>
                                             <a href="https://www.facebook.com/pages/Evilnut-Creative-Technology/718486438230974" target="_blank" class="social-media-icon facebook-icon" data-original-title="facebook">facebook</a>
                                         </li>
@@ -285,66 +291,52 @@
                             <div class="col-md-10">
 
                                 <!-- Mobile Button Menu -->
-                                <div class="mobile-menu-button">
-                                    <i class="fa fa-list-ul"></i>
-                                </div>
-                                <!-- //Mobile Button Menu// -->
-
-
-
-
-                                <nav>
+ <nav>
                                     <ul class="navigation">
                                         <li>
                                             <a href="index.html">
-                                                <span class="label-nav">
-                                                    Home
-                                                </span>
-                                                
+                                                <span class="label-nav"><span class="strHome"></span></span> 
                                             </a>
-                                            
                                         </li>
                                         <li>
                                             <a href="web-design.html">
                                                 <span class="label-nav">
-                                                    Service
+                                                    <span class="strService"></span>
                                                 </span>
                                                 <span class="label-nav-sub" data-hover="Consulting">
-                                                    Software
+                                                    <span class="strSoftware"></span>
                                                 </span>
                                             </a>
                                             <ul>
                                                 <li>
-                                                    <a href="web-design.html"> Web Design </a>
+                                                    <a href="web-design.html"><span class="strWebDesign"></span></a>
                                                 </li>
                                                 <li>
-                                                    <a href="application-customization.html"> Custom Application </a>
+                                                    <a href="application-customization.html"><span class="strAppCustom"></span></a>
                                                 </li>
                                                 <li>
-                                                    <a href="graph-design.html"> Graph Design </a>
+                                                    <a href="graph-design.html"><span class="strGraphDesign"></span> </a>
                                                 </li>
                                                 <li>
-                                                    <a href="integrated-communication.html"> SEO </a>
+                                                    <a href="integrated-communication.html"><span class="strSEO"></span></a>
                                                 </li>
                                             </ul>
                                         </li>
                                         <li>
                                             <a href="process.html">
-                                                <span class="label-nav">
-                                                    Process
-                                                </span>
+                                                <span class="label-nav"><span class="strProcess"></span></span>
                                                 <span class="label-nav-sub" data-hover="7 steps only">
-                                                    Easy to create
+                                                    <span class="strProcessHover"></span>
                                                 </span>
                                             </a>
                                         </li>
                                         <li>
                                             <a href="portfolio.html">
                                                 <span class="label-nav">
-                                                    Portfolio
+                                                    <span class="strPortfolio"></span>
                                                 </span>
                                                 <span class="label-nav-sub" data-hover="Applications">
-                                                    Our Work
+                                                    <span class="strOurWork"></span>
                                                 </span>
                                             </a>
                                           
@@ -352,15 +344,15 @@
                                         <li>
                                             <a href="contact-us.html">
                                                 <span class="label-nav">
-                                                    Contact Us
+                                                    <span class="strContactUs"></span>
                                                 </span>
                                                 <span class="label-nav-sub" data-hover="(604)336-6018">
-                                                    Call Us
+                                                    <span class="strCallUs"></span>
                                                 </span>
                                             </a>
                                             <ul>
                                                 <li>
-                                                    <a href="our-team.html">Our Team</a>
+                                                    <a href="our-team.html"><span class="strOurTeam"></span></a>
                                                 </li>                                                                    
                                             </ul>
                                         </li>
@@ -388,6 +380,12 @@
 
 
                     </div>
+
+
+
+
+
+
                 </header>
                 <!-- //Header// -->
               
@@ -402,19 +400,19 @@
                         <div class="row">
                             <div class="col-md-12 col-sm-12">
                                 <div class="page-info">
-                                    <h1 class="h1-page-title">About Us</h1>
+                                    <h1 class="h1-page-title"><span class="strAboutUs"></span></h1>
 
                                     <h2 class="h2-page-desc">
-                                        Know The Reasons Behind Our Success
+                                        <span class="strKnowTheReason"></span>
                                     </h2>
 
                                     <!-- BreadCrumb -->
                                     <div class="breadcrumb-container">
                                         <ol class="breadcrumb">
                                             <li>
-                                                <a href="#">Home</a>
+                                                <a href="#"><span class="strHome"></span></a>
                                             </li>
-                                            <li class="active">About Us</li>
+                                            <li class="active"></li><span style="color:#e2e2e2" class="strAboutUs"></span>
                                         </ol>
                                     </div>
                                     <!-- BreadCrumb -->
@@ -440,7 +438,7 @@
                                  data-animrepeat="0"
                                  data-speed="1s"
                                  data-delay="0.4s">
-                                <h2 class="h2-section-title">About Us</h2>
+                                <h2 class="h2-section-title"><span class="strAboutUs"></span></h2>
                                 <div class="i-section-title">
                                     <i class="icon-feather">
 
@@ -454,10 +452,10 @@
                         <div class="row">
                             <div class="col-md-6 col-sm-6">
                                 <div class="title-block clearfix">
-                                    <h3 class="h3-body-title">Our Company In Short</h3>
+                                    <h3 class="h3-body-title"><span class="strOurCompanyInShort"></span></h3>
                                     <div class="title-seperator"></div>
                                 </div><p>
-                                    Evilnut Creative Technology is officially registered in Canada, British Columbia! We are a standard web design company with professional procedures in place. Our company has a fixed managements, with editors, artists, and programmers. We listen carefully, analyzes customer’s needs and objectives in the field so that the cite plays the greatest effect.
+                                    <span class="strOurCompanyInShortDetail"></span>
                                 </p>
                                 <p>
 
@@ -514,7 +512,7 @@
                             <div class="col-md-6 col-sm-6">
 
                                 <div class="title-block clearfix">
-                                    <h3 class="h3-body-title">Our departments</h3>
+                                    <h3 class="h3-body-title"><span class="strDepartment"></span></h3>
                                     <div class="title-seperator"></div>
                                 </div><div class="accordion" data-toggle="off" data-active-index="0">
 
@@ -523,9 +521,9 @@
 
                                         <div class="title">
                                             <div class="open-icon"></div>
-                                            <h4>Graphic Design Department</h4>
+                                            <h4><span class="strGraphicDepartment"></span></h4>
                                         </div>
-                                        <div class="desc">Codea Design Studio, along with Evilnut Creative Technology, we provide an all-in-one service for you and your company. Technique over technology, we produce an emotionless design.</div>
+                                        <div class="desc"><span class="strGraphicDepartmentDetail"></span></div>
                                     </div>
 
 
@@ -533,9 +531,9 @@
 
                                         <div class="title">
                                             <div class="open-icon"></div>
-                                            <h4>Web develop department</h4>
+                                            <h4><span class="strWebDepartment"></span></h4>
                                         </div>
-                                        <div class="desc">Our Web develop department provides website strategy, design and a unique no-code website platform that lets people update both the content and design of their website without coding. Not a template or theme-based system, Evilnut Creative Technology provides you with unparalleled flexibility.</div>
+                                        <div class="desc"><span class="strWebDepartmentDetail"></span></div>
                                     </div>
 
 
@@ -543,9 +541,9 @@
 
                                         <div class="title">
                                             <div class="open-icon"></div>
-                                            <h4>Software Develop department</h4>
+                                            <h4><span class="strSoftwareDepartment"></span></h4>
                                         </div>
-                                        <div class="desc">Software is changing the world.In order to promote the development of software dissemination of knowledge and innovation, we created a evilnut software department. We are committed to providing neutral, dominated by technology practitioners conference, content and online communities.</div>
+                                        <div class="desc"><span class="strSoftwareDepartmentDetail"></span></div>
                                     </div>
                                 </div>
                             </div>
@@ -556,7 +554,7 @@
 
                             <div class="col-md-6 col-sm-6">
                                 <div class="title-block clearfix">
-                                    <h3 class="h3-body-title">Our Skills</h3>
+                                    <h3 class="h3-body-title"><span class="strOurSkills"></span></h3>
                                     <div class="title-seperator"></div>
                                 </div>
                                 <div class="progress">
@@ -565,7 +563,7 @@
                                          data-animtype="animate-progress"
                                          data-animrepeat="0">
 
-                                        <span class="sr-only">Web Customization</span>
+                                        <span class="sr-only"><span class="strWebCustom"></span></span>
                                     </div>
                                 </div>
                                 <div class="progress">
@@ -574,7 +572,7 @@
                                          data-animtype="animate-progress"
                                          data-animrepeat="0">
 
-                                        <span class="sr-only">Graphic Design</span>
+                                        <span class="sr-only"><span class="strGraphDesign"></span></span>
                                     </div>
                                 </div>
                                 <div class="progress">
@@ -583,7 +581,7 @@
                                          data-animtype="animate-progress"
                                          data-animrepeat="0">
 
-                                        <span class="sr-only">Application Development</span>
+                                        <span class="sr-only"><span class="strApplicationDevelopment"></span></span>
                                     </div>
                                 </div>
                                 <div class="progress">
@@ -592,7 +590,7 @@
                                          data-animtype="animate-progress"
                                          data-animrepeat="0">
 
-                                        <span class="sr-only">SEO Optimisation</span>
+                                        <span class="sr-only"><span class="strSEOOptimisation"></span></span>
                                     </div>
                                 </div>
                             </div>
@@ -603,7 +601,7 @@
                         <div class="row">            
                             <div class="col-md-12 col-sm-12">
                                 <div class="title-block clearfix">
-                                    <h3 class="h3-body-title">Our Team</h3>
+                                    <h3 class="h3-body-title"><span class="strOurTeam"></span></h3>
                                     <div class="title-seperator"></div>
                                 </div>
                                 <p>
@@ -636,10 +634,10 @@
                                         </h3>
 
                                         <div class="team-member-position">
-                                           CEO
+                                           <span class="strScottTile"></span>
                                         </div>
                                         <div class="team-member-short-bio">
-                                            Graduated from SFU, major in computer science
+                                            <span class="strGraduated"></span>
                                         </div>
                                     </div>
                                 </div>
@@ -666,10 +664,10 @@
                                         </h3>
 
                                         <div class="team-member-position">
-                                            Project Manager
+                                            <span class="strAlexTile"></span>
                                         </div>
                                         <div class="team-member-short-bio">
-                                            Graduated from SFU, major in computer science
+                                            <span class="strGraduated"></span>
                                         </div>
                                     </div>
                                 </div>
@@ -697,10 +695,10 @@
                                         </h3>
 
                                         <div class="team-member-position">
-                                            Project Manager
+                                            <span class="strAlexTile"></span>
                                         </div>
                                         <div class="team-member-short-bio">
-                                            Graduated from SFU, major in Computer Science
+                                            <span class="strGraduated"></span>
                                         </div>
                                     </div>
                                 </div>
@@ -729,10 +727,10 @@
                                         </h3>
 
                                         <div class="team-member-position">
-                                            Project Manager
+                                            <span class="strLukeTile"></span>
                                         </div>
                                         <div class="team-member-short-bio">
-                                            Graduated from SFU, major in Computer Science
+                                            <span class="strGraduated"></span>
                                         </div>
                                     </div>
                                 </div>
@@ -785,80 +783,73 @@
                                       
                                     </div>
                                 </div>
-                                <!-- //Footer Col.// -->
-
-
-                                <!-- Footer Col. -->
-                                <div class="col-md-3 col-sm-3 footer-col">
-                                    <div class="footer-content">
-                                        <div class="footer-title">
-                                        Address
-										</div>
-                                        <div class="footer-content-text">
-											<p> 202-6125 Sussex Ave,<br> Burnaby, B.C.</p>
-                                            <p>135-11300 No.5 Road,<br> Richmond, B.C.</p>
-                                            
-                                        </div>
+                                <!-- //Footer Col.// -->    <div class="col-md-3 col-sm-3 footer-col">
+                                <div class="footer-content">
+                                    <div class="footer-title"><span class="strAddress"></span></div>
+                                    <div class="footer-content-text">
+                                        <p><span class="strBurnabyAddr"></span><br><span class="strBurnaby"></span></p>
+                                        <p><span class="strRichmondAddr"></span><br><span class="strRichmond"></span></p>   
                                     </div>
                                 </div>
-								
-								<!-- Footer Col. -->
-                                <div class="col-md-3 col-sm-3 footer-col">
-                                    <div class="footer-content">
-                                        <div class="footer-title">
-                                        <br>
-										</div>
-                                        <div class="footer-content-text">
-											<p><strong>Tel: </strong>+1(604)336-6018</p>
-											<p><strong>E-mail: </strong>Service@evilnut.ca</p>
-                                            
-                                        </div>
-                                    </div>
-                                </div>
-							
-                                <!-- Footer Col. -->
-                                <div class="col-md-3 col-sm-3 footer-col">
+                            </div>
+                            
+                            <!-- Footer Col. -->
+                            <div class="col-md-3 col-sm-3 footer-col">
+                                <div class="footer-content">
                                     <div class="footer-title">
-                                        Links
+                                    <br>
                                     </div>
-                                    <div class="footer-content">
-                                        <ul class="footer-category-list">
-											<li>
-                                                <a href="/">Home</a>
-                                            </li>
-                                            <li>
-                                                <a href="web-design.html">Service</a>
-                                            </li>
-                                            <li>
-                                                <a href="process.html">Process</a>
-                                            </li>
-                                            <li>
-                                                <a href="portfolio.html">Portfolio</a>
-                                            </li>
-                                            <li>
-                                                <a href="contact-us.html">Contact Us</a>
-                                            </li>
-                                        </ul>
+                                    <div class="footer-content-text">
+                                        <p><strong>Tel: </strong>+1(604)336-6018</p>
+                                        <p><strong>E-mail: </strong>Service@evilnut.ca</p>
+                                        
                                     </div>
                                 </div>
-                                <!-- //Footer Col.// -->
-
                             </div>
+                        
+                            <!-- Footer Col. -->
+                            <div class="col-md-3 col-sm-3 footer-col">
+                                <div class="footer-title">
+                                    Links
+                                </div>
+                                <div class="footer-content">
+                                    <ul class="footer-category-list">
+                                        <li>
+                                            <a href="/"><span class="strHome"></span></a>
+                                        </li>
+                                        <li>
+                                            <a href="web-design.html"><span class="strService"></span></a>
+                                        </li>
+                                        <li>
+                                            <a href="process.html"><span class="strProcess"></span></a>
+                                        </li>
+                                        <li>
+                                            <a href="portfolio.html"><span class="strPortfolio"></span></a>
+                                        </li>
+                                        <li>
+                                            <a href="contact-us.html"><span class="strContactUs"></span></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- //Footer Col.// -->
+
                         </div>
-
                     </div>
-                    <div class="copyright">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-md-12 col-sm-12 center-text">
-                                    <div class="copyright-text" style="color:white">&copy; 2014. Developed By <a href="http://www.evilnut.ca/" target="_blank">Evilnut Creative Technology</a></div>
-                                </div>
 
+                </div>
+                <div class="copyright">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12 col-sm-12 center-text">
+                                <div class="copyright-text">&copy; 2014. Developed By <a href="http://www.evilnut.ca/" target="_blank">Evilnut Creative Technology</a></div>
                             </div>
+
                         </div>
                     </div>
                 </div>
-            </footer>
+            </div>
+        </footer>
 
         </div><!-- wrapper end -->
 
