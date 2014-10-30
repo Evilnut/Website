@@ -252,11 +252,11 @@
 
 	"strMaintenanceDetail"	:		"无论何时，只要您对设计计划有任何的疑虑，我们都会为你提供支持及解决方案。我们注重客户的意见和产品体验。",
 	"strServiceGuarantee"	:		"服务保证",
-	"strServiceGuaranteeDetail":	"我们将提供最专业的服务，在每一步。在我们的网站设计团队20多个有经验的人来为您提供最周到的设计服务。",
+	"strServiceGuaranteeDetail":	"我们会在每阶段提供最专业的服务。拥有超过二十人的网络设计队伍，我们会为您带来最有创意的设计服务。",
 	"strQualityGuarantee"	:		"质量保证",
-	"strQualityGuaranteeDetail":	"我们拥有专业的技术团队，24小时的维护，保证网络的畅通。",
+	"strQualityGuaranteeDetail":	"我们的专业技术队伍会为您提供24小时午休的维护服务，以确保您的网络畅通无阻。",
 	"strSafetyAssurance"	:		"安全保证",
-	"strSafetyAssuranceDetail":		"我们保证病毒去除率将高于99%。我们使用SSL和HTTPS确保客户信息的安全。",
+	"strSafetyAssuranceDetail":		"我们保证病毒去除率会达到99%或者更高。除此之外，我们会使用SSL和HTTPS来确保客户信息的安全",
 	"strOperationalStrength":		"操作强度",
-	"strOperationalStrengthDetail":	"G类共享带宽，并发来确保我们的网站访问量大的高速。企业级防火墙，防DDOS攻击，定期自动安全扫描，保证客户网站安全。NAS存储冗余，两点灾难恢复保证网站稳定运行。"
+	"strOperationalStrengthDetail":	"我们使用G-class的宽带，以确保网站高速的访问及大量的数据同步。除此之外，我们使用了企业级防火墙，反DDOS进攻，并进行周期性的自动安全检查，以确保客户网站的安全性。NAS冗余储存以及两点式的灾难恢复计划也都被使用以确保网站稳定运行。"
 }
