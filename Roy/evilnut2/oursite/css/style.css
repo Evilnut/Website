@@ -219,7 +219,7 @@ select .white-text,
 textarea .white-text { color: #ffffff !important;
 } .body_paragraph { color: #666666; font-family: "Open Sans", sans-serif; font-size: 13px;
 } .highlighted-text { background-color: #9d634c; color: #ffffff; padding: 2px;
-} strong.colored, span.colored { color: #9d634c;
+} strong.colored, span.colored { color: #9d634c; 
 } .skin-text { color: #9d634c !important;
 } body .white-text .feature-details a:hover, html .white-text .feature-details a:hover,
 button .white-text .feature-details a:hover,
@@ -1471,3 +1471,5 @@ Testimonial
 }
 .testimonial-big .testimonial-big-img img { width: auto; height: 190px;
 } 
+span{ font-family: "Open Sans", sans-serif, "Helvetica Neue", Helvetica, Arial, sans-serif, Microsoft Yahei;
+}

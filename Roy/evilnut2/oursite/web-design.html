@@ -67,9 +67,13 @@
         <script type="text/javascript" src="js/respond.js"></script>
         <![endif]-->
         <link rel="stylesheet" href="css/color-chooser.css">
+		<!-- Translate toolkit[ -->
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+		<script type="text/javascript" src="js/stringHelper.js"></script>
     </head>
     <body>
-
+	
         <!-- remprod -->
         <script type="text/x-handlebars-template" id="css-skin">
 
@@ -212,7 +216,6 @@
 
 
         <div id="wrapper"  >
-
             <div class="top_wrapper">
                 <div class="top-bar">
                     <div class="container">
@@ -220,15 +223,11 @@
                             <div class="col-sm-7">
                                 <div class="call-us top-bar-block">
                                     <i class="icon-phone"></i>
-                                    <span>
-                                        Call us at +1(604)336-6018
-                                    </span>
+                                    <span class="strCallUsAt"></span>
                                 </div>
                                 <div class="mail-us top-bar-block">
                                     <i class="icon-email"></i>                            
-                                    <span>
-                                        E-mail: service@evilnut.ca
-                                    </span>                            
+                                    <span class="strEmailUsAt"></span>                            
                                 </div>
 
                             </div>
@@ -245,6 +244,12 @@
                                 <!-- //Search Box// -->
                                 <div class="social-icons">
                                     <ul>
+										<li class="chinese-language-button">
+                                            <a href="#"><strong><span class="strChinese"></span></strong></a>
+                                        </li>
+										<li href="" class="english-language-button">
+                                            <a href="#" ><strong><span class="strEnglish"></span></strong></a>
+                                        </li>
                                         <li>
                                             <a href="https://www.facebook.com/pages/Evilnut-Creative-Technology/718486438230974" target="_blank" class="social-media-icon facebook-icon" data-original-title="facebook">facebook</a>
                                         </li>
@@ -260,6 +265,7 @@
                                         <li>
                                             <a href="#" target="_blank" class="social-media-icon dribble-icon" data-original-title="dribble">dribble</a>
                                         </li>
+										
                                     </ul>
 
                                 </div>
@@ -270,7 +276,7 @@
 
                 <!-- Header -->
                 <header id="header">
-                    <div class="container">
+                    <div class="container" >
 
                         <div class="row header">
 
@@ -291,62 +297,52 @@
                                     <i class="fa fa-list-ul"></i>
                                 </div>
                                 <!-- //Mobile Button Menu// -->
-
-
-
-
                                 <nav>
                                     <ul class="navigation">
                                         <li>
                                             <a href="index.html">
-                                                <span class="label-nav">
-                                                    Home
-                                                </span>
-                                                
+                                                <span class="label-nav"><span class="strHome"></span></span> 
                                             </a>
-                                            
                                         </li>
                                         <li>
                                             <a href="web-design.html">
                                                 <span class="label-nav">
-                                                    Service
+                                                    <span class="strService"></span>
                                                 </span>
-                                                <span class="label-nav-sub" data-hover="Mobile">
-                                                    Software
+                                                <span class="label-nav-sub" data-hover="Consulting">
+                                                    <span class="strSoftware"></span>
                                                 </span>
                                             </a>
                                             <ul>
                                                 <li>
-                                                    <a href="web-design.html"> Web Design </a>
+                                                    <a href="web-design.html"><span class="strWebDesign"></span></a>
                                                 </li>
                                                 <li>
-                                                    <a href="application-customization.html"> Custom Application </a>
+                                                    <a href="application-customization.html"><span class="strAppCustom"></span></a>
                                                 </li>
                                                 <li>
-                                                    <a href="graph-design.html"> Graph Design </a>
+                                                    <a href="graph-design.html"><span class="strGraphDesign"></span> </a>
                                                 </li>
                                                 <li>
-                                                    <a href="integrated-communication.html"> SEO </a>
+                                                    <a href="integrated-communication.html"><span class="strSEO"></span></a>
                                                 </li>
                                             </ul>
                                         </li>
                                         <li>
                                             <a href="process.html">
-                                                <span class="label-nav">
-                                                    Process
-                                                </span>
+                                                <span class="label-nav"><span class="strProcess"></span></span>
                                                 <span class="label-nav-sub" data-hover="7 steps only">
-                                                    Easy to create
+                                                    <span class="strProcessHover"></span>
                                                 </span>
                                             </a>
                                         </li>
                                         <li>
                                             <a href="portfolio.html">
                                                 <span class="label-nav">
-                                                    Portfolio
+                                                    <span class="strPortfolio"></span>
                                                 </span>
                                                 <span class="label-nav-sub" data-hover="Applications">
-                                                    Our Work
+                                                    <span class="strOurWork"></span>
                                                 </span>
                                             </a>
                                           
@@ -354,15 +350,15 @@
                                         <li>
                                             <a href="contact-us.html">
                                                 <span class="label-nav">
-                                                    Contact Us
+                                                    <span class="strContactUs"></span>
                                                 </span>
                                                 <span class="label-nav-sub" data-hover="(604)336-6018">
-                                                    Call Us
+                                                    <span class="strCallUs"></span>
                                                 </span>
                                             </a>
                                             <ul>
                                                 <li>
-                                                    <a href="our-team.html">Our Team</a>
+                                                    <a href="our-team.html"><span class="strOurTeam"></span></a>
                                                 </li>                                                                    
                                             </ul>
                                         </li>
@@ -386,7 +382,6 @@
                             <!-- Nav -->
 
                         </div>
-
                     </div>
                 </header>
                 <!-- //Header// -->
@@ -395,19 +390,19 @@
                         <div class="row">
                             <div class="col-md-12 col-sm-12">
                                 <div class="page-info">
-                                    <h1 class="h1-page-title">Service</h1>
+                                    <h1 class="h1-page-title"><span class="strService"></span></h1>
 
                                     <h2 class="h2-page-desc">
-                                        Web Design
+                                        <span class="strWebDesign"></span>
                                     </h2>
 
                                     <!-- BreadCrumb -->
                                     <div class="breadcrumb-container">
                                         <ol class="breadcrumb">
                                             <li>
-                                                <a href="/">Home</a>
+                                                <a href="/"><span class="strHome"></span></a>
                                             </li>
-                                            <li class="active">Service</li>
+                                            <li class="active "></li><span class="strService" style="color:#e2e2e2">Service</span>
                                         </ol>
                                     </div>
                                     <!-- BreadCrumb -->
@@ -435,15 +430,15 @@
                                     <div class="space-sep100"></div>
 
 
-                                    <h2 class="h2-section-title">Web Design</h2>
-                                    <h3 class="h3-section-info">Evilnut Creative Technology is chosen to improve the user experience for making your website online greatly. We offer great UX design as well as user interface design that has a real impact on your target audience. We have highly motivated and passionate UX and UI designers who simply enjoy working on user experience design projects.</h3>
+                                    <h2 class="h2-section-title"><span class="strWebDesign">Web Design<span></h2>
+                                    <h3 class="h3-section-info"><span class="strWebDesignIntro"Evilnut Creative Technology is chosen to improve the user experience for making your website online greatly. We offer great UX design as well as user interface design that has a real impact on your target audience. We have highly motivated and passionate UX and UI designers who simply enjoy working on user experience design projects.</span></h3>
                                 </div>
                                 <div class="col-md-6 col-sm-6 animated" data-animtype="fadeInRight"
                                      data-animrepeat="0"
                                      data-speed="1s"
                                      data-delay="0.4s">
                                     <div class="right-image-container center-text">
-                                        <img src=media/iphone4.png alt="Iphone" />
+                                        <img src=media/responsive-web-design.png alt="Iphone" />
                                     </div>                    
                                 </div>           
                             </div>           
@@ -457,7 +452,7 @@
                                  data-animrepeat="0"
                                  data-speed="1s"
                                  data-delay="0.4s">
-                                <h2 class="h2-section-title">Web Design Services</h2>
+                                <h2 class="h2-section-title"><span class="strWebDesignServices"></span></h2>
                                 <div class="i-section-title">
                                     <i class="icon-cloud">
 
@@ -476,12 +471,12 @@
                                      >
                                     <h4 class="h4-body-title">
                                         <i class="icon-ipad"></i>
-                                        <strong>Mobile </strong> Responsive
+                                        <strong><span class="strMobile">Mobile </span></strong> <span class="strResponsive">Responsive</span>
                                     </h4>
                                     <div class="content-box-text">
-                                        provide an optimal viewing experience—easy reading with a minimum of resizing, 
-										panning, and scrolling—across a wide range of devices 
-
+										<span class="strMobileDetail">
+                                        
+										</span>
                                     </div>
 
                                 </div>
@@ -495,12 +490,13 @@
                                      >
                                     <h4 class="h4-body-title">
                                         <i class="icon-settings"></i>
-                                        <strong>Custom </strong> Design
+                                        <strong><span class="strCustom">Custom</span> </strong><span class="strDesign"> Design</span>
                                     </h4>
                                     <div class="content-box-text">
+										<span class="strCustomDetail">
                                         unique with Custom Fonts. Personalize your blog with our diverse collection of 
 										fonts, logo, image, video, icon and more. 
-										
+										</span>
 
                                     </div>
 
@@ -515,12 +511,13 @@
                                      >
                                     <h4 class="h4-body-title">
                                         <i class="icon-painting-roll-streamline"></i>
-                                        <strong> Traffic </strong> Analytic
+                                        <strong><span class="strTraffic"> Traffic </span></strong> <span class="strAnalytic">Analytic </span>
                                     </h4>
                                     <div class="content-box-text">
+										<span class="strTrafficDetail">
                                         Track web, mobile & social traffic. Get actionable insights today!
 										Generate traffic statistic report for multiple purpose. 
-
+										</span>
                                     </div>
 
                                 </div>
@@ -534,12 +531,13 @@
                                      >
                                     <h4 class="h4-body-title">
                                         <i class="icon-file-settings"></i>
-                                        <strong>Well </strong> Documented
+                                        <strong><span class="strWell">Well </span></strong><span class="strDocumented"> Documented</span>
                                     </h4>
                                     <div class="content-box-text">
+										<span class="strWellDetail">
                                         specifications document for programmers and testers, a technical document for internal users, 
 										or software manuals and help files for end users
-
+										</span>
                                     </div>
 
                                 </div>
@@ -559,12 +557,13 @@
                                      >
                                     <h4 class="h4-body-title">
                                         <i class="icon-eye"></i>
-                                        <strong>SEO </strong> Ready
+                                        <strong><span class="strSEO">SEO </span></strong><span class="strReady"> Ready </span>
                                     </h4>
                                     <div class="content-box-text">
+										<span class="strSEODetail">
                                         using high quality seo services to get ahead of you in major search engines.
 										 we have more Search Marketing experience
-
+										</span>
                                     </div>
 
                                 </div>
@@ -578,12 +577,13 @@
                                      >
                                     <h4 class="h4-body-title">
                                         <i class="icon-world"></i>
-                                        <strong>Product </strong> Inventory
+                                        <strong><span class="strProduct">Product </span></strong><span class="strInventory"> Inventory </span>
                                     </h4>
                                     <div class="content-box-text">
+										<span class="strProductDetail">
                                         specification assists in managing inventory.you can improve inventory visibility, 
 										reduce inventory levels and control inventory operations
-
+										</span>
                                     </div>
 
                                 </div>
@@ -597,12 +597,13 @@
                                      >
                                     <h4 class="h4-body-title">
                                         <i class="fa fa-film"></i>
-                                        <strong>Animation </strong> Ready
+                                        <strong><span class="strAnimation">Animation </span></strong><span class="strReady"> Ready</span>
                                     </h4>
                                     <div class="content-box-text">
+										<span class="strAnimationDetail">
                                         creating effective animation-ready art 
                                         animated, rigged, ready posed 3D still models unmatched in quality.
-
+										</span>
                                     </div>
 
                                 </div>
@@ -616,11 +617,12 @@
                                      >
                                     <h4 class="h4-body-title">
                                         <i class="icon-lab"></i>
-                                        <strong>Latest </strong> Technology
+                                        <strong><span class="strLatest">Latest </span></strong><span class="strTechnology"> Technology</span>
                                     </h4>
                                     <div class="content-box-text">
+										<span class="strLatestDetail">
                                         We always keep update and improve our current software development tools 
-                                        
+                                        </span>
 
                                     </div>
 
@@ -637,7 +639,7 @@
             
 			
 			<div class="content-wrapper hide-until-loading"><div class="body-wrapper">
-                    <h2 class="h2-section-title">Web Desgin Plans</h2>
+                    <h2 class="h2-section-title"><span class="strWebDesignPlans">Web Desgin Plans</span></h2>
                     <div class="space-sep40"></div>
                     <div class="section-content section-tabs full-tabs">
                         <div class="tab-container">
@@ -645,13 +647,13 @@
                             <div class="section-etabs-container">
                                 <ul class="section-etabs">
                                     <li class="tab active">
-                                        <a href="#tabc4"> Business Essentials Plan </a>
+                                        <a href="#tabc4"> <span class="strEssentials">Business Essentials Plan </span></a>
                                     </li>
                                     <li class="tab">
-                                        <a href="#tabc5"> Advance and E-commerce Plan </a>
+                                        <a href="#tabc5"><span class="strEcommerce"> Advance and E-commerce Plan </span></a>
                                     </li>
                                     <li class="tab">
-                                        <a href="#tabc6"> Advance and Bundle Plan  </a>
+                                        <a href="#tabc6"><span class="strAdvance"> Advance and Bundle Plan  </span></a>
                                     </li>
                                 </ul>
                             </div>
@@ -666,8 +668,8 @@
                                                     <div class="space-sep100"></div>
 
 
-                                                    <h2 class="h2-section-title"> Business Essentials Plan</h2>
-                                                    <h3 class="h3-section-info">Don't miss out the simple business website with contents, photos, videos, contact forms and business emails. We want to help you grow your business in an easy and affordable way!</h3>
+                                                    <h2 class="h2-section-title"><span class="strEssentials"> Business Essentials Plan</span></h2>
+                                                    <h3 class="h3-section-info"><span class="strEssentialsDetail">Don't miss out the simple business website with contents, photos, videos, contact forms and business emails. We want to help you grow your business in an easy and affordable way!</span></h3>
                                                 </div>
 
 
@@ -688,8 +690,8 @@
                                                     <div class="space-sep100"></div>
 
 
-                                                    <h2 class="h2-section-title"> Advance and E-commerce plan </h2>
-                                                    <h3 class="h3-section-info">Plans with blog, RSS feed, large product inventory, press-release, graphic design and e-commerce. We boost your business with our professional e-commerce solutions. </h3>
+                                                    <h2 class="h2-section-title"> <span class="strEcommerce">Advance and E-commerce plan</span> </h2>
+                                                    <h3 class="h3-section-info"><span class="strEcommerceDetail">Plans with blog, RSS feed, large product inventory, press-release, graphic design and e-commerce. We boost your business with our professional e-commerce solutions.</span> </h3>
                                                 </div>
 
 
@@ -710,8 +712,8 @@
                                                     <div class="space-sep100"></div>
 
 
-                                                    <h2 class="h2-section-title"> Advance and Bundle Plan </h2>
-                                                    <h3 class="h3-section-info">Plans with most advanced custom feature and e-commerce. We boost your business with our most professional e-commerce solutions.</h3>
+                                                    <h2 class="h2-section-title"> <span class="strAdvance">Advance and Bundle Plan </span></h2>
+                                                    <h3 class="h3-section-info"><span class="strAdvanceDetail">Plans with most advanced custom feature and e-commerce. We boost your business with our most professional e-commerce solutions.</span></h3>
                                                 </div>
 
 
@@ -733,7 +735,7 @@
                     <div class="container">
                         <div class="row">
                             <div class="col-md-12 col-sm-12">
-                                <h2 class="h2-section-title">Pricing Tables</h2>
+                                <h2 class="h2-section-title"><span class="strPriceTable">Pricing Tables</span></h2>
 
                                 <div class="i-section-title">
                                     <i class="fa fa-table">
@@ -749,32 +751,43 @@
 
                                         <div class="price-label">
                                             <div class="price-label-name">
+												<span class="strEssentials">
                                                 Business Essentials
+												</span>
                                             </div>
 
                                         </div>
                                         <div class="price-value">
                                             <div class="price-number"> 9.99 </div>
                                             <div class="price-unit">   $ </div>
-                                            <div class="price-per"> / month </div>
+                                            <div class="price-per"><span class="strPerMonth"> / month </span></div>
 
                                         </div>
                                     </div>
 
                                     <div class="price-table-rows">
 										<div class="price-table-row">
+											<span class="strFreeSetup">
                                             Free Setup Fee
+											</span>
                                         </div>
 										<div class="price-table-row">
+											<span class="strOnePage">
                                             One Design Page
+											</span>
                                         </div>
 										<div class="price-table-row">
+											<span class="strUnlimitedEmail">
                                             Unlimited Email Forward
+											</span>
                                         </div>
                                         <div class="price-table-row">
+											<span class="strOnlineHosting">
                                             Online Hosting
+											</span>
                                         </div>
                                         <div class="price-table-row">
+											<span class="strMobile"></span> <span class="strResponsive"></span>
                                             Mobile Response
                                         </div>
                                        
@@ -782,7 +795,9 @@
                                     </div>
                                     <div class="price-table-row-bottom">
                                         <a href="#" class="btn btn-flat">
+											<span class="strQuote">
                                             Quote a price
+											</span>
                                         </a>
                                     </div>    
                                 </div>                </div>
@@ -792,15 +807,16 @@
 
                                         <div class="price-label">
                                             <div class="price-label-name">
-                                              Advance and Ecommerce 
-
+												<span class="strEcommerce">
+												Advance and Ecommerce 
+												</span>
                                             </div>
 
                                         </div>
                                         <div class="price-value">
                                             <div class="price-number">99.99</div>
                                             <div class="price-unit">  $ </div>
-                                            <div class="price-per"> / month</div>
+                                            <div class="price-per"><span class="strPerMonth"> / month</span></div>
 
                                         </div>
                                     </div>
@@ -808,31 +824,46 @@
                                     <div class="price-table-rows">
 
                                         <div class="price-table-row">
+											<span class="strEssentialsIn">
                                             Included Essentials Plan
+											</span>
                                         </div>    
                                         <div class="price-table-row">
+											<span class="strImageSlider">
                                             Image Slider
+											</span>
                                         </div>
                                         <div class="price-table-row">
+											<span class="strEmail">
                                             Email
+											</span>
                                         </div>
 										<div class="price-table-row">
+											<span class="strTraffic"></span> <span class="strAnalytic"></span>
 											Traffic Analytic
+											</span>
                                         </div>
 										<div class="price-table-row">
-                                            SEO (Web Hosting)
+											<span class="strSEO"></span> <span class="strWebHosting"></span>
+                                           
                                         </div>
 										<div class="price-table-row">
+											<span class="strBlog">
                                             Blog
+											</span>
                                         </div>
 										<div class="price-table-row">
+											<span class="strRSS">
                                             RSS Feed
+											</span>
                                         </div>
 
                                     </div>
                                     <div class="price-table-row-bottom">
                                         <a href="#" class="btn btn-flat">
+											<span class="strQuote">
                                             Quote a price
+											</span>
                                         </a>
                                     </div>    
                                 </div>                </div>
@@ -842,15 +873,16 @@
 
                                         <div class="price-label">
                                             <div class="price-label-name">
+												<span class="strAdvance">
                                                 Advance and Bundle Plan
-
+												</span>
                                             </div>
 
                                         </div>
                                         <div class="price-value">
                                             <div class="price-number">399.99</div>
                                             <div class="price-unit">  $ </div>
-                                            <div class="price-per"> / month</div>
+                                            <div class="price-per"><span class="strPerMonth"> / month</span></div>
 
                                         </div>
                                     </div>
@@ -858,141 +890,148 @@
                                     <div class="price-table-rows">
 
                                         <div class="price-table-row">
+											<span class="strAdvanceIn">
                                             Included Advance and Ecommerce Plan
+											</span>
                                         </div>
 										<div class="price-table-row">
-                                            RSS Feed
+											<span class="strProduct"></span> <span class="strInventory"></span>
+                                            
                                         </div>
 										<div class="price-table-row">
-                                            Product Inventory
+											<span class="strProductListing"></span>
+                                           
                                         </div>
 										<div class="price-table-row">
-                                            Product Listing
-                                        </div>
-										<div class="price-table-row">
+											<span class="strGraphDesign">
                                             Graphic Design
+											</span>
                                         </div>
 										<div class="price-table-row">
+											<span class="strOrders">
                                             Orders
+											</span>
                                         </div>
 										<div class="price-table-row">
+											<span class="strCoupon">
                                             Coupon
+											</span>
                                         </div>
 										<div class="price-table-row">
+											<span class="strOnlinePayment">
                                             Online Payment
+											</span>
                                         </div>
 										<div class="price-table-row">
+											<span class="strMultiple">
                                             Multiple Languages
+											</span>
                                         </div>
 										<div class="price-table-row">
+											<span class="strCustomDesign">
                                             Custom Design 
+											</span>
                                         </div>
 
                                     </div>
                                     <div class="price-table-row-bottom">
                                         <a href="#" class="btn btn-flat">
+											<span class="strQuote">
                                             Quote a price
+											</span>
                                         </a>
                                     </div>    
-                                </div>                </div>
-                            
-
+                                </div>                
+							</div>
                         </div>
                     </div>
 
                 </div>
             </div><!--.content-wrapper end -->
-            <footer>
-                <div class="footer">
-
-                    <div class="container">
-                        <div class="footer-wrapper">
-                            <div class="row">
-
-
-                                <!-- Footer Col. -->
-                                <div class="col-md-3 col-sm-3 footer-col">
-                                    <div class="footer-content">
-                                        <div class="footer-content-logo">
-                                            <img src="media/evilnut_logo.png" alt="" width="200px" height="100px"/>
-                                        </div>
-                                      
+           
+		   <!-- footer -->
+        <footer>
+            <div class="footer">
+                <div class="container">
+                    <div class="footer-wrapper">
+                        <div class="row">
+                            <!-- Footer Col. -->
+                            <div class="col-md-3 col-sm-3 footer-col">
+                                <div class="footer-content">
+                                    <div class="footer-content-logo">
+                                        <img src="media/evilnut_logo.png" alt="" width="200px" height="100px"/>
                                     </div>
                                 </div>
-                                <!-- //Footer Col.// -->
-
-
-                                <!-- Footer Col. -->
-                                <div class="col-md-3 col-sm-3 footer-col">
-                                    <div class="footer-content">
-                                        <div class="footer-title">
-                                        Address
-										</div>
-                                        <div class="footer-content-text">
-											<p> 202-6125 Sussex Ave,<br> Burnaby, B.C.</p>
-                                            <p>135-11300 No.5 Road,<br> Richmond, B.C.</p>
-                                            
-                                        </div>
+                            </div>
+                            <!-- //Footer Col.// -->
+                            <!-- Footer Col. -->
+                            <div class="col-md-3 col-sm-3 footer-col">
+                                <div class="footer-content">
+                                    <div class="footer-title"><span class="strAddress"></span></div>
+                                    <div class="footer-content-text">
+                                    	<p><span class="strBurnabyAddr"></span><br><span class="strBurnaby"></span></p>
+                                    	<p><span class="strRichmondAddr"></span><br><span class="strRichmond"></span></p>   
                                     </div>
                                 </div>
-								
-								<!-- Footer Col. -->
-                                <div class="col-md-3 col-sm-3 footer-col">
-                                    <div class="footer-content">
-                                        <div class="footer-title">
-                                        <br>
-										</div>
-                                        <div class="footer-content-text">
-											<p><strong>Tel: </strong>+1(604)336-6018</p>
-											<p><strong>E-mail: </strong>Service@evilnut.ca</p>
-                                            
-                                        </div>
-                                    </div>
-                                </div>
+                            </div>
 							
-                                <!-- Footer Col. -->
-                                <div class="col-md-3 col-sm-3 footer-col">
+							<!-- Footer Col. -->
+                            <div class="col-md-3 col-sm-3 footer-col">
+                                <div class="footer-content">
                                     <div class="footer-title">
-                                        Links
-                                    </div>
-                                    <div class="footer-content">
-                                        <ul class="footer-category-list">
-											<li>
-                                                <a href="/">Home</a>
-                                            </li>
-                                            <li>
-                                                <a href="web-design.html">Service</a>
-                                            </li>
-                                            <li>
-                                                <a href="process.html">Process</a>
-                                            </li>
-                                            <li>
-                                                <a href="portfolio.html">Portfolio</a>
-                                            </li>
-                                            <li>
-                                                <a href="contact-us.html">Contact Us</a>
-                                            </li>
-                                        </ul>
+                                    <br>
+									</div>
+                                    <div class="footer-content-text">
+										<p><strong>Tel: </strong>+1(604)336-6018</p>
+										<p><strong>E-mail: </strong>Service@evilnut.ca</p>
+                                        
                                     </div>
                                 </div>
-                                <!-- //Footer Col.// -->
-
                             </div>
+						
+                            <!-- Footer Col. -->
+                            <div class="col-md-3 col-sm-3 footer-col">
+                                <div class="footer-title">
+                                    Links
+                                </div>
+                                <div class="footer-content">
+                                    <ul class="footer-category-list">
+										<li>
+                                            <a href="/"><span class="strHome"></span></a>
+                                        </li>
+                                        <li>
+                                            <a href="web-design.html"><span class="strService"></span></a>
+                                        </li>
+                                        <li>
+                                            <a href="process.html"><span class="strProcess"></span></a>
+                                        </li>
+                                        <li>
+                                            <a href="portfolio.html"><span class="strPortfolio"></span></a>
+                                        </li>
+                                        <li>
+                                            <a href="contact-us.html"><span class="strContactUs"></span></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- //Footer Col.// -->
+
                         </div>
-
                     </div>
-                    <div class="copyright">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-md-12 col-sm-12 center-text">
-                                    <div class="copyright-text"style="color:white">&copy; 2014. Developed By <a href="http://www.evilnut.ca/" target="_blank">Evilnut Creative Technology</a></div>
-                                </div>
 
+                </div>
+                <div class="copyright">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12 col-sm-12 center-text">
+                                <div class="copyright-text">&copy; 2014. Developed By <a href="http://www.evilnut.ca/" target="_blank">Evilnut Creative Technology</a></div>
                             </div>
+
                         </div>
                     </div>
                 </div>
-            </footer>
+            </div>
+        </footer>
 
         </div><!-- wrapper end -->
 

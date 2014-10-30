@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <!--[if lt IE 7]>
 <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>
@@ -65,6 +65,10 @@
         <script type="text/javascript" src="js/respond.js"></script>
         <![endif]-->
         <link rel="stylesheet" href="css/color-chooser.css">
+		<!-- Translate toolkit[ -->
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+		<script type="text/javascript" src="js/stringHelper.js"></script>
     </head>
     <body>
 
@@ -207,7 +211,7 @@
         </script>
 
 
-        <div id="wrapper"  >
+         <div id="wrapper"  >
             <div class="top_wrapper">
                 <div class="top-bar">
                     <div class="container">
@@ -215,15 +219,11 @@
                             <div class="col-sm-7">
                                 <div class="call-us top-bar-block">
                                     <i class="icon-phone"></i>
-                                    <span>
-                                        Call us at +1(604)336-6018
-                                    </span>
+                                    <span class="strCallUsAt"></span>
                                 </div>
                                 <div class="mail-us top-bar-block">
                                     <i class="icon-email"></i>                            
-                                    <span>
-                                        E-mail: service@evilnut.ca
-                                    </span>                            
+                                    <span class="strEmailUsAt"></span>                            
                                 </div>
 
                             </div>
@@ -240,6 +240,12 @@
                                 <!-- //Search Box// -->
                                 <div class="social-icons">
                                     <ul>
+										<li class="chinese-language-button">
+                                            <a href="#"><strong><span class="strChinese"></span></strong></a>
+                                        </li>
+										<li href="" class="english-language-button">
+                                            <a href="#" ><strong><span class="strEnglish"></span></strong></a>
+                                        </li>
                                         <li>
                                             <a href="https://www.facebook.com/pages/Evilnut-Creative-Technology/718486438230974" target="_blank" class="social-media-icon facebook-icon" data-original-title="facebook">facebook</a>
                                         </li>
@@ -255,6 +261,7 @@
                                         <li>
                                             <a href="#" target="_blank" class="social-media-icon dribble-icon" data-original-title="dribble">dribble</a>
                                         </li>
+										
                                     </ul>
 
                                 </div>
@@ -265,7 +272,7 @@
 
                 <!-- Header -->
                 <header id="header">
-                    <div class="container">
+                    <div class="container" >
 
                         <div class="row header">
 
@@ -277,6 +284,7 @@
                             </div>
                             <!-- //Logo// -->
 
+
                             <!-- Navigation File -->
                             <div class="col-md-10">
 
@@ -285,51 +293,52 @@
                                     <i class="fa fa-list-ul"></i>
                                 </div>
                                 <!-- //Mobile Button Menu// -->
-
                                 <nav>
                                     <ul class="navigation">
                                         <li>
                                             <a href="index.html">
-                                                <span class="label-nav">Home</span>     
+                                                <span class="label-nav"><span class="strHome"></span></span> 
                                             </a>
                                         </li>
                                         <li>
                                             <a href="web-design.html">
-                                                <span class="label-nav">Service </span>
-                                                <span class="label-nav-sub" data-hover="Consulting">Software </span>
+                                                <span class="label-nav">
+                                                    <span class="strService"></span>
+                                                </span>
+                                                <span class="label-nav-sub" data-hover="Consulting">
+                                                    <span class="strSoftware"></span>
+                                                </span>
                                             </a>
                                             <ul>
                                                 <li>
-                                                    <a href="web-design.html"> Web Design </a>
+                                                    <a href="web-design.html"><span class="strWebDesign"></span></a>
                                                 </li>
                                                 <li>
-                                                    <a href="application-customization.html"> Custom Application </a>
+                                                    <a href="application-customization.html"><span class="strAppCustom"></span></a>
                                                 </li>
                                                 <li>
-                                                    <a href="graph-design.html"> Graph Design </a>
+                                                    <a href="graph-design.html"><span class="strGraphDesign"></span> </a>
                                                 </li>
                                                 <li>
-                                                    <a href="integrated-communication.html"> SEO </a>
+                                                    <a href="integrated-communication.html"><span class="strSEO"></span></a>
                                                 </li>
                                             </ul>
                                         </li>
                                         <li>
                                             <a href="process.html">
-                                                <span class="label-nav">
-                                                    Process
-                                                </span>
+                                                <span class="label-nav"><span class="strProcess"></span></span>
                                                 <span class="label-nav-sub" data-hover="7 steps only">
-                                                    Easy to create
+                                                    <span class="strProcessHover"></span>
                                                 </span>
                                             </a>
                                         </li>
                                         <li>
                                             <a href="portfolio.html">
                                                 <span class="label-nav">
-                                                    Portfolio
+                                                    <span class="strPortfolio"></span>
                                                 </span>
                                                 <span class="label-nav-sub" data-hover="Applications">
-                                                    Our Work
+                                                    <span class="strOurWork"></span>
                                                 </span>
                                             </a>
                                           
@@ -337,15 +346,15 @@
                                         <li>
                                             <a href="contact-us.html">
                                                 <span class="label-nav">
-                                                    Contact Us
+                                                    <span class="strContactUs"></span>
                                                 </span>
                                                 <span class="label-nav-sub" data-hover="(604)336-6018">
-                                                    Call Us
+                                                    <span class="strCallUs"></span>
                                                 </span>
                                             </a>
                                             <ul>
                                                 <li>
-                                                    <a href="our-team.html">Our Team</a>
+                                                    <a href="our-team.html"><span class="strOurTeam"></span></a>
                                                 </li>                                                                    
                                             </ul>
                                         </li>
@@ -369,7 +378,6 @@
                             <!-- Nav -->
 
                         </div>
-
                     </div>
                 </header>
                 <!-- //Header// -->
@@ -379,13 +387,19 @@
                         <div class="row">
                             <div class="col-md-12 col-sm-12">
                                 <div class="page-info">
-                                    <h1 class="h1-page-title">Service</h1>
-                                    <h2 class="h2-page-desc">Application Development</h2>
+                                    <h1 class="h1-page-title"><span class="strService"></span></h1>
+
+                                    <h2 class="h2-page-desc">
+                                        <span class="strAppCustom"></span>
+                                    </h2>
+
                                     <!-- BreadCrumb -->
                                     <div class="breadcrumb-container">
                                         <ol class="breadcrumb">
-                                            <li><a href="/">Home</a></li>
-                                            <li class="active">Service</li>
+                                            <li>
+                                                <a href="/"><span class="strHome"></span></a>
+                                            </li>
+                                            <li class="active "></li><span class="strService" style="color:#e2e2e2">Service</span>
                                         </ol>
                                     </div>
                                     <!-- BreadCrumb -->
@@ -411,9 +425,9 @@
                              data-speed="1s"
                              data-delay="0.4s">   
                             <div class="space-sep20"></div>
-                            <h2 class="h2-section-title">Mobile Marketing</h2>
-                            <h3 style="text-align:center">Beginning from Mobile Site</h3>
-                            <h3 class="h3-section-info">In Canada, there are more then 30 million people use smart phone to obtain product and service information.Do you want your business to be more well-known? It is time to create a mobile version website, and start your mobile marketing.</h3>
+                            <h2 class="h2-section-title"><span class="strAppTitle">Mobile Marketing</span></h2>
+                            <h3 style="text-align:center"><span class="strSubAppTitle">Beginning from Mobile Site</span></h3>
+                            <h3 class="h3-section-info"><span class="strAppDetail">In Canada, there are more then 30 million people use smart phone to obtain product and service information.Do you want your business to be more well-known? It is time to create a mobile version website, and start your mobile marketing.</span></h3>
                             <div class="space-sep20"></div>
                         </div>
 
@@ -437,7 +451,7 @@
                                  data-animrepeat="0"
                                  data-speed="1s"
                                  data-delay="0.4s">
-                                <h2 class="h2-section-title">Services</h2>
+                                <h2 class="h2-section-title"><span class="strAppServices">Services</span></h2>
                                 <div class="i-section-title"><i class="icon-cloud"></i></div>
                             </div>
                         </div>
@@ -452,11 +466,13 @@
                                      >
                                     <h4 class="h4-body-title">
                                         <i class="icon-ipad"></i>
-                                        <strong>Generate </strong>app icons
+                                        <strong><span class="strGenerate">Generate</span> </strong><span class="strAppIcon">app icons</span>
                                     </h4>
                                     <div class="content-box-text">
+										<span class="strGenerateDetail">
                                         We provide the mobile client installation package, and generate a enterprise app icon in your user's mobile phone.
-                                    </div>
+										</span>
+									</div>
 
                                 </div>
                             </div>
@@ -469,11 +485,13 @@
                                      >
                                     <h4 class="h4-body-title">
                                         <i class="icon-settings"></i>
-                                        <strong>Custom </strong>welcome page
+                                        <strong><span class="strCustom">Custom</span> </strong><span class="strWelcome">welcome page</span>
                                     </h4>
                                     <div class="content-box-text">
+										<span class="strWelcomeDetail">
                                         After opening the app, the first page is the customized welcome page to enhance corporate brand image. 
-                                    </div>
+										</span>
+									</div>
 
                                 </div>
                             </div>
@@ -486,11 +504,13 @@
                                      >
                                     <h4 class="h4-body-title">
                                         <i class="icon-painting-roll-streamline"></i>
-                                        <strong>Locate </strong>user position
+                                        <strong><span class="strLocate">Locate </span> </strong><span class="strPosition">user position</span>
                                     </h4>
                                     <div class="content-box-text">
+										<span class="strLocateDetail">
                                         Map module supports the LBS(location-base services), it can invoke the phone's GPS function to help users plan routes to find your campany more easily.
-                                    </div>
+										</span>
+									</div>
 
                                 </div>
                             </div>
@@ -503,11 +523,13 @@
                                      >
                                     <h4 class="h4-body-title">
                                         <i class="icon-file-settings"></i>
-                                        <strong>navigate</strong> Multi-level
+                                        <strong><span class="strNavigate">navigate</span></strong> <span class="strMultiLevel">Multi-level</span>
                                     </h4>
                                     <div class="content-box-text">
+										<span class="strNavigateDetail">
                                         A multi-level navigation directory designed specifically for touch screen mobile phone, and supports the multi-level category display.
-                                    </div>
+										</span>
+									</div>
 
                                 </div>
                             </div>
@@ -526,12 +548,13 @@
                                      >
                                     <h4 class="h4-body-title">
                                         <i class="icon-eye"></i>
-                                        <strong>diverse </strong> template 
+                                        <strong><span class="strDiverse">diverse</span> </strong> <span class="strTemplate">template</span> 
                                     </h4>
                                     <div class="content-box-text">
+										<span class="strDiverseDetail">
                                         We provide different information architecture and design style to meet the require of different types of customers in variety of industry.
-                                    </div>
-
+										</span>
+									</div>
                                 </div>
                             </div>
                             <div class="col-md-3 col-sm-3"> 
@@ -543,11 +566,13 @@
                                      >
                                     <h4 class="h4-body-title">
                                         <i class="icon-world"></i>
-                                        <strong>multidimensional </strong> 
+                                        <strong><span class="strMultidim">multidimensional</span> </strong> 
                                     </h4>
                                     <div class="content-box-text">
+										<span class="strMultidimDetail">
                                         Products/services description in multi-angle, detail close-up, picture description, everything can be accessed smoothly through the phone and display in front of customers.
-                                    </div>
+										</span>
+									</div>
 
                                 </div>
                             </div>
@@ -560,11 +585,13 @@
                                      >
                                     <h4 class="h4-body-title">
                                         <i class="fa fa-film"></i>
-                                        <strong>Cross-platform </strong>
+                                        <strong><span class="strCross">Cross-platform </span></strong>
                                     </h4>
                                     <div class="content-box-text">
+										<span class="strCrossDetail">
                                         We use a variety of the most cutting-edge development technology to provide a application can ben run on Android, iOS, Blackbarry, Windows Phone, or even PC/MAC.
-                                    </div>
+										</span>
+									</div>
 
                                 </div>
                             </div>
@@ -574,7 +601,7 @@
                 </div>
 
 				<div class="content-wrapper hide-until-loading"><div class="body-wrapper">
-                    <h2 class="h2-section-title">Section Tabs With Backgrounds</h2>
+                    <h2 class="h2-section-title"><span class="strAppDevPlan">Application Development Plan</span></h2>
                     <div class="space-sep40"></div>
                     <div class="section-content section-tabs full-tabs">
                         <div class="tab-container">
@@ -582,13 +609,13 @@
                             <div class="section-etabs-container">
                                 <ul class="section-etabs">
                                     <li class="tab active">
-                                        <a href="#tabc4">iOS/Android Develpment</a>
+                                        <a href="#tabc4"> <span class="strIOSDev">iOS/Android Develpment</span></a>
                                     </li>
                                     <li class="tab">
-                                        <a href="#tabc5">WeChat Customization</a>
+                                        <a href="#tabc5"><span class="strWeChat">WeChat Customization</span></a>
                                     </li>
                                     <li class="tab">
-                                        <a href="#tabc6">Game Develpment</a>
+                                        <a href="#tabc6"><span class="strGameDev">Game Develpment</span></a>
                                     </li>
                                 </ul>
                             </div>
@@ -601,8 +628,8 @@
                                             <div class="row">
                                                 <div class="col-md-6 col-sm-6">   
                                                     <div class="space-sep50"></div>
-                                                    <h2 class="h2-section-title">Cross-Platform Mobile Application </h2>
-                                                    <h3 class="h3-section-info">Using the most cutting-edge hybrid applications technology. Our the application can be installed in multi systems, such as iOS, Android, Windows Phone etc.</h3>
+                                                    <h2 class="h2-section-title"><span class="strCrossApp">Cross-Platform Mobile Application </span></h2>
+                                                    <h3 class="h3-section-info"><span class="strCrossAppDetail">Using the most cutting-edge hybrid applications technology. Our the application can be installed in multi systems, such as iOS, Android, Windows Phone etc.</span></h3>
                                                 </div>
                                                 <div class="col-md-6 col-sm-6">
                                                     <div class="right-image-container">
@@ -625,8 +652,8 @@
                                                 <div class="col-md-6 col-sm-6">
                                                     <div class="space-sep80"></div>
 
-                                                    <h2 class="h2-section-title">WeChat Public/Service Account </h2>
-                                                    <h3 class="h3-section-info">A new ways for Companies to interact with customers one on one, promote and sale quickly and easily.</h3>
+                                                    <h2 class="h2-section-title"><span class="strWeChatAcc">WeChat Public/Service Account </span></h2>
+                                                    <h3 class="h3-section-info"><span class="strWeChatAccDetail">A new ways for Companies to interact with customers one on one, promote and sale quickly and easily.</span></h3>
                                                 </div>
 
                                             </div>
@@ -639,8 +666,8 @@
                                             <div class="row">
                                                 <div class="col-md-6 col-sm-6">   
                                                     <div class="space-sep50"></div>
-                                                    <h2 class="h2-section-title">Game Devleopment</h2>
-                                                    <h3 class="h3-section-info">Our core staffs have worked on mobile/PC games for many years. We provide iPhone, Android phone, Xbox, PS3 games development and custom (or just art production) services.</h3>
+                                                    <h2 class="h2-section-title"><span class="strGameDev">Game Devleopment</span></h2>
+                                                    <h3 class="h3-section-info"><span class="strGameDevDetail">Our core staffs have worked on mobile/PC games for many years. We provide iPhone, Android phone, Xbox, PS3 games development and custom (or just art production) services.</span></h3>
                                                 </div>
 
 
@@ -661,7 +688,7 @@
                     <div class="container">
                         <div class="row">
                             <div class="col-md-12 col-sm-12">
-                                <h2 class="h2-section-title">Pricing Tables</h2>
+                                <h2 class="h2-section-title"><span class="strPriceTable">Pricing Tables</span></h2>
                                 <div class="i-section-title">
                                     <i class="fa fa-table">
                                     </i>
@@ -675,13 +702,13 @@
                                     <div class="price-table-header">
 
                                         <div class="price-label">
-                                            <div class="price-label-name">Mobile App</div>
+                                            <div class="price-label-name"><span class="strMobileApp">Mobile App</span></div>
 
                                         </div>
                                         <div class="price-value">
                                             <div class="price-number">999</div>
                                             <div class="price-unit">  $ </div>
-                                            <div class="price-per"> starting</div>
+                                            <div class="price-per"><span class="strStart"> starting</span></div>
 
                                         </div>
                                     </div>
@@ -689,24 +716,36 @@
                                     <div class="price-table-rows">
 
                                         <div class="price-table-row">
+											<span class="strCrossPlatform">
                                             Cross-platform(iOS/Android/WP8)
+											</span>
                                         </div>
                                         <div class="price-table-row">
+											<span class="strCMS">
                                             Content Management
+											</span>
                                         </div>
                                         <div class="price-table-row">
+											<span class="strGPS">
                                             GPS System
+											</span>
                                         </div>
                                         <div class="price-table-row">
+											<span class="strGPRS">
                                             GPRS connection
+											</span>
                                         </div>
                                         <div class="price-table-row">
+											<span class="strMediaSup">
                                             Media support
+											</span>
                                         </div>
                                     </div>
                                     <div class="price-table-row-bottom">
                                         <a href="#" class="btn btn-flat">
+											<span class="strQuote">
                                             Get a Quote
+											</span>
                                         </a>
                                     </div>    
                                 </div>                </div>
@@ -715,13 +754,15 @@
                                     <div class="price-table-header">
 
                                         <div class="price-label">
-                                            <div class="price-label-name">Wechat Develpment</div>
+											
+                                            <div class="price-label-name"><span class="strWeChat">Wechat Develpment</span></div>
 
                                         </div>
                                         <div class="price-value">
                                             <div class="price-number">200</div>
                                             <div class="price-unit">  $ </div>
-                                            <div class="price-per"> starting</div>
+											<span class="strMultidimensional">
+                                            <div class="price-per"><span class="strStart"> starting</span></div>
 
                                         </div>
                                     </div>
@@ -729,22 +770,32 @@
                                     <div class="price-table-rows">
 
                                         <div class="price-table-row">
+											<span class="strPublic">
                                             Public Account development
+											</span>
                                         </div>
                                         <div class="price-table-row">
+											<span class="strServiceAcc">
                                             Service Account Development
+											</span>
                                         </div>
                                         <div class="price-table-row">
+											<span class="strBackEnd">
                                             Back-end Setup/Maintenance
+											</span>
                                         </div>
                                         <div class="price-table-row">
+											<span class="strClientSide">
                                             Client Side Interface/Function Design
+											</span>
                                         </div>
 
                                     </div>
                                     <div class="price-table-row-bottom">
                                         <a href="#" class="btn btn-flat">
+											<span class="strQuote">
                                             Get a Quote
+											</span>
                                         </a>
                                     </div>    
                                 </div>                </div>
@@ -754,7 +805,9 @@
 
                                         <div class="price-label">
                                             <div class="price-label-name">
+												<span class="strGameDev">
                                                 Game Develpment
+												</span>
 
                                             </div>
 
@@ -762,7 +815,7 @@
                                         <div class="price-value">
                                             <div class="price-number">999</div>
                                             <div class="price-unit">  $ </div>
-                                            <div class="price-per"> starting</div>
+                                            <div class="price-per"> <span class="strStart">starting</span></div>
 
                                         </div>
                                     </div>
@@ -770,25 +823,37 @@
                                     <div class="price-table-rows">
 
                                         <div class="price-table-row">
+											<span class="str2D">
                                             2D/2.5D Development
+											</span>
                                         </div>
                                         <div class="price-table-row">
+											<span class="str3D">
                                             3D Development
+											</span>
                                         </div>
                                         <div class="price-table-row">
+											<span class="strBackEnd">
                                             Back-end Setup/Maintenance
+											</span>
                                         </div>
                                         <div class="price-table-row">
+											<span class="strAdvertising">
                                             In-app Advertising
+											</span>
                                         </div>
                                         <div class="price-table-row">
+											<span class="strAppPurchase">
                                             In-app Purchase
+											</span>
                                         </div>
 
                                     </div>
                                     <div class="price-table-row-bottom">
                                         <a href="#" class="btn btn-flat">
+											<span class="strQuote">
                                             Get a Quote
+											</span>
                                         </a>
                                     </div>    
                                 </div>                
@@ -797,97 +862,89 @@
                     </div>
                 </div>
             </div><!--.content-wrapper end -->
-            <footer>
-                <div class="footer">
-
-                    <div class="container">
-                        <div class="footer-wrapper">
-                            <div class="row">
-
-
-                                <!-- Footer Col. -->
-                                <div class="col-md-3 col-sm-3 footer-col">
-                                    <div class="footer-content">
-                                        <div class="footer-content-logo">
-                                            <img src="media/evilnut_logo.png" alt="" width="200px" height="100px"/>
-                                        </div>
-                                      
+            <!-- footer -->
+        <footer>
+            <div class="footer">
+                <div class="container">
+                    <div class="footer-wrapper">
+                        <div class="row">
+                            <!-- Footer Col. -->
+                            <div class="col-md-3 col-sm-3 footer-col">
+                                <div class="footer-content">
+                                    <div class="footer-content-logo">
+                                        <img src="media/evilnut_logo.png" alt="" width="200px" height="100px"/>
                                     </div>
                                 </div>
-                                <!-- //Footer Col.// -->
-
-
-                                <!-- Footer Col. -->
-                                <div class="col-md-3 col-sm-3 footer-col">
-                                    <div class="footer-content">
-                                        <div class="footer-title">
-                                        Address
-										</div>
-                                        <div class="footer-content-text">
-											<p> 202-6125 Sussex Ave,<br> Burnaby, B.C.</p>
-                                            <p>135-11300 No.5 Road,<br> Richmond, B.C.</p>
-                                            
-                                        </div>
+                            </div>
+                            <!-- //Footer Col.// -->
+                            <!-- Footer Col. -->
+                            <div class="col-md-3 col-sm-3 footer-col">
+                                <div class="footer-content">
+                                    <div class="footer-title"><span class="strAddress"></span></div>
+                                    <div class="footer-content-text">
+                                    	<p><span class="strBurnabyAddr"></span><br><span class="strBurnaby"></span></p>
+                                    	<p><span class="strRichmondAddr"></span><br><span class="strRichmond"></span></p>   
                                     </div>
                                 </div>
-								
-								<!-- Footer Col. -->
-                                <div class="col-md-3 col-sm-3 footer-col">
-                                    <div class="footer-content">
-                                        <div class="footer-title">
-                                        <br>
-										</div>
-                                        <div class="footer-content-text">
-											<p><strong>Tel: </strong>+1(604)336-6018</p>
-											<p><strong>E-mail: </strong>Service@evilnut.ca</p>
-                                            
-                                        </div>
-                                    </div>
-                                </div>
+                            </div>
 							
-                                <!-- Footer Col. -->
-                                <div class="col-md-3 col-sm-3 footer-col">
+							<!-- Footer Col. -->
+                            <div class="col-md-3 col-sm-3 footer-col">
+                                <div class="footer-content">
                                     <div class="footer-title">
-                                        Links
-                                    </div>
-                                    <div class="footer-content">
-                                        <ul class="footer-category-list">
-											<li>
-                                                <a href="/">Home</a>
-                                            </li>
-                                            <li>
-                                                <a href="web-design.html">Service</a>
-                                            </li>
-                                            <li>
-                                                <a href="process.html">Process</a>
-                                            </li>
-                                            <li>
-                                                <a href="portfolio.html">Portfolio</a>
-                                            </li>
-                                            <li>
-                                                <a href="contact-us.html">Contact Us</a>
-                                            </li>
-                                        </ul>
+                                    <br>
+									</div>
+                                    <div class="footer-content-text">
+										<p><strong>Tel: </strong>+1(604)336-6018</p>
+										<p><strong>E-mail: </strong>Service@evilnut.ca</p>
+                                        
                                     </div>
                                 </div>
-                                <!-- //Footer Col.// -->
-
                             </div>
+						
+                            <!-- Footer Col. -->
+                            <div class="col-md-3 col-sm-3 footer-col">
+                                <div class="footer-title">
+                                    Links
+                                </div>
+                                <div class="footer-content">
+                                    <ul class="footer-category-list">
+										<li>
+                                            <a href="/"><span class="strHome"></span></a>
+                                        </li>
+                                        <li>
+                                            <a href="web-design.html"><span class="strService"></span></a>
+                                        </li>
+                                        <li>
+                                            <a href="process.html"><span class="strProcess"></span></a>
+                                        </li>
+                                        <li>
+                                            <a href="portfolio.html"><span class="strPortfolio"></span></a>
+                                        </li>
+                                        <li>
+                                            <a href="contact-us.html"><span class="strContactUs"></span></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- //Footer Col.// -->
+
                         </div>
-
                     </div>
-                    <div class="copyright">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-md-12 col-sm-12 center-text">
-                                    <div class="copyright-text">&copy; 2014. Developed By <a href="http://www.evilnut.ca/" target="_blank">Evilnut Creative Technology</a></div>
-                                </div>
 
+                </div>
+                <div class="copyright">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12 col-sm-12 center-text">
+                                <div class="copyright-text">&copy; 2014. Developed By <a href="http://www.evilnut.ca/" target="_blank">Evilnut Creative Technology</a></div>
                             </div>
+
                         </div>
                     </div>
                 </div>
-            </footer>
+            </div>
+        </footer>
 
         </div><!-- wrapper end -->
 
