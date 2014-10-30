@@ -53,6 +53,156 @@
 	"strOurTeam"	:		"Our Team",
 	"strOurTeam"	:		"Our Team",
 	"strOurTeam"	:		"Our Team",
-	"strOurTeam"	:		"Our Team"
+	"strOurTeam"	:		"Our Team",
+	"strPerMonth"	:		"month",
+
+
+
+
+
+
+
+
+
+
+
+
+	"strPriceTable"	    :		"Pricing Tables",
+	"strQuote"          :		"Quote a price",
+
+	"strGraphicServices":		"Services",
+	"strGraphicLogo"    :		"logo",
+	"strGraphicDesign"  :		"design",
+	"strGraphicCard"    :		"business card",
+	"strGraphicPoster"	:		"poster",
+	"strGraphicFlyer"   :		"flyer",
+	"strGraphicPlan"    :		"Graphic Design Plans",
+	"strGraphicLogoDe"  :		"Logo Design",
+	"strGraphicCardDe"  :		"Business Card Design",
+	"strGraphicPosterDe":		"Poster Design",
+	"strGraphicFlyerDe" :		"Flyer Design",
+	"strGraphicLogoBa"  :		"Basic Logo Plan includes:",
+	"strGraphicCardBa"  :		"Business Card Plan includes:",
+	"strGraphicPosterBa":		"Basic Poster Plan includes:",
+	"strGraphicFlyerBa" :		"Basic Flyer Plan includes:",
+	"strGraphicLong0"	:		"Codea Design Studio, along with Evilnut Creative Technology, we provide an all-in-one service for you and your company. Technique over technology, we produce an emotionless design. A project can never be completed without details.",
+	"strGraphicLong1"	: 		"An affordable plan ideal for new businesses or existing companies requiring a fresh new look. A smart logo design can do wonders for your business, it's what makes you stand out from the crowd and how people will remember you. ",
+	"strGraphicLong2"	:		"Set yourself apart with business cards that stand out. It's not just a way to pass on your phone number and email details, its a part of your business image and needs to be done correctly. Get your custom designs done here. ",
+	"strGraphicLong3"	:		"It'simple, allow our design staff to create a custom poster design that meets all your specific business needs. Priced at a very affordable, non-hourly, flat-rate. ",
+	"strGraphicLong4"	:		"Evilnut flyer designers just waiting to enter your flyer design contest and create you a professional and high quality logo. ",
+
+
+
+
+	"strGraphicLogoD1"  :		"2 concepts",
+	"strGraphicLogoD2"	:		"3 revisions",
+	"strGraphicLogoD3"	:		"1 final logo design ready for print, web etc",
+	"strGraphicLogoD4"	:		"Initial concepts in 5 days",
+	"strGraphicLogoNoHi":		"No hidden costs!",
+	
+
+
+
+	"strGraphicCardD1"  :		"Double sided card design",
+	"strGraphicCardD2"	:		"1000 cards printed in full colour",
+	"strGraphicCardD3"	:		"Shipped to your door",
+	"strGraphicCardD4"	:		"Chubby Profile Card",
+	"strGraphicCardD5"	:		"FREE Full-bleed, full-color printing",	
+	"strGraphicCardD6"	:		"Skinny and standard-sized cards",
+	"strGraphicCardD7"	:		"Choose from 10 types",
+
+
+
+
+	"strGraphicPosterD1":		"3 samples",
+	"strGraphicPosterD2":		"unlimited revisions, once you choose one of them or request additional samples. ",
+	"strGraphicPosterD3":		"Your own dedicated designer",
+	"strGraphicPosterD4":		"Initial concepts in 5 days",
+	"strGraphicPosterD5":		"Multiple design revisions",
+	"strGraphicPosterD6":		"100% money-back guarantee",
+
+
+
+	"strGraphicFlyerD1" :		"On average 5+ flyer designs are created for you to choose from",
+	"strGraphicFlyerD2"	:		"You will get full ownership rights to your design",
+	"strGraphicFlyerD3"	:		" We offer a 100% money back guarantee",
+	"strGraphicFlyerD4" :		"Your own designer",
+	"strGraphicFlyerD5" :		"2 flyer designs",
+	"strGraphicFlyerD6" :		"full ownership rights",
+	"strGraphicFlyerD7" :		"100% money back guarantee",
+
+
+
+
+
+
+
+
+
+	"strGraphicStart"	:		"starting",
+
+
+	"strSeoShort1"		:		"setup",
+	"strSeoShort2"		:		"content",
+	"strSeoShort3"		:		"WRITING",
+	"strSeoShort4"		:		"traffic",
+	"strSeoShort5"		:		"Analytics",
+	"strSeoShort6"		:		"local business",
+	"strSeoShort7"		:		"optimization",
+	"strSeoShort8"		:		"social media",
+	"strSeoShort9"		:		"marketing",
+	"strSeoShort10"		:		"language",
+	"strSeoShort11"		:		"Translation",
+	"strSeoShort12"		:		"globals",
+	"strSeoShort13"		:		"SEO",
+	"strSeoShort14"		:		"Dedicated",
+	"strSeoShort15"		:		"Manager",
+	
+
+
+	"strSeoLong0"		:		"A marketing idea base on search engine, provide the self-marketing solution for your website to help your business always at the leading position in your industry to gain more brand benefits.",
+	"strSeoService"		:		"SEO Services",
+	"strSeoLong1"		:		"Keyword research, Competitor Comparison, Code Optimization link Saturation, Sitemap Creation.",
+	"strSeoLong2"		:		"Off-site Optimization, On-site Optimization, Keyword Analytics, Keyword Sets, Targeted Key Phrases.",
+	"strSeoLong3"		:		"Monthly Performance Reports from Google Analytic.",
+	"strSeoLong4"		:		"Optimize your business for Google Maps and Local Directories to drive targeted local visitors from your city or town.",
+	"strSeoLong5"		:		"We create and manage your profile on multiple social networks, engaging with your clients, running promotions and increasing \"like\".",
+	"strSeoLong6"		:		"Translate your web language into different language, so more search engine can grab it.",
+	"strSeoLong7"		:		"Works for Google + all other major search engines around the world.",
+	"strSeoLong8"		:		"Dedicated manager directly help and report for the customer.",
+
+
+
+	"strSeoPlan"		:		"SEO Plans",
+	"strSeoPlan1"		:		"Starter Plan",
+	"strSeoPlan2"		:		"Intermediate Plan",
+	"strSeoPlan3"		:		"Advancee Plan",
+
+	"strSeoPlan1Des"	:		"Don't miss out our starter plan for SEO, it's included SEO setup, marketing research, content writing, traffic analytic, and local SEO",
+	"strSeoPlan2Des"	:		"We have intermediate plan for bigger company to fit their needs, it provides local submission, Google webmaster tools, local business optimization, social media marketing, Google AdWords, and Regioinal SEO.",
+	"strSeoPlan3Des"	:		"Advance plan is specific for enterprise company which needs more advance features such as global SEO and dedicated Manager.",
+
+
+	"strSeoPlan1D1"		:		"No Setup Fee",
+	"strSeoPlan1D2"		:		"SEO Setup & Marketing Reasch ",
+	"strSeoPlan1D3"		:		"Content Writing ",
+	"strSeoPlan1D4"		:		"Traffic Analytic ",
+	"strSeoPlan1D5"		:		"Link Builders ",
+	"strSeoPlan1D6"		:		"Local SEO ",
+
+
+	"strSeoPlan2D1"		:		"Included Starter Plan",
+	"strSeoPlan2D2"		:		"Local Submissions",
+	"strSeoPlan2D3"		:		"Google Webmaster Tools",
+	"strSeoPlan2D4"		:		"Local Business Optimization",
+	"strSeoPlan2D5"		:		"Social Media Marketing",
+	"strSeoPlan2D6"		:		"Google AdWords",
+	"strSeoPlan2D7"		:		"Language",
+	"strSeoPlan2D8"		:		"Regional SEO",
+
+	"strSeoPlan3D1"		:		"Included Starter Plan",
+	"strSeoPlan3D2"		:		"Included Intermediate Plan",
+	"strSeoPlan3D3"		:		"Global SEO",
+	"strSeoPlan3D4"		:		"Dedicated Manager"
 
 }

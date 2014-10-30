@@ -47,5 +47,154 @@
 	"strBurnabyAddr":		"202-6125 Sussex Ave,",
 	"strBurnaby"	:		"本拿比, B.C.省",
 	"strRichmondAddr":		"135-11300 No.5 Road,",
-	"strRichmond"	:		"列治文, B.C.省."
+	"strRichmond"	:		"列治文, B.C.省.",
+	"strPerMonth"	:		"月",
+
+
+
+
+
+
+
+
+
+	"strPriceTable"	:		"价目表",
+	"strQuote"   :		"联系我们",
+
+
+
+	"strGraphicServices":		"服务",
+	"strGraphicLogo"    :		"Logo",
+	"strGraphicDesign"  :		"设计",
+	"strGraphicCard"    :		"商务名片",
+	"strGraphicPoster"	:		"海报",
+	"strGraphicFlyer"   :		"广告传单",
+	"strGraphicPlan"    :		"平面设计套餐",
+	"strGraphicLogoDe"  :		"LOGO设计",
+	"strGraphicCardDe"  :		"商务名片设计",
+	"strGraphicPosterDe":		"海报设计",
+	"strGraphicFlyerDe" :		"广告传单设计",
+	"strGraphicLogoBa"  :		"Logo设计初级套餐:",
+	"strGraphicCardBa"  :		"名片设计初级套餐:",
+	"strGraphicPosterBa":		"海报设计初级套餐:",
+	"strGraphicFlyerBa" :		"广告传单初级套餐:",
+	
+	"strGraphicLong0"	:		"Evilnut Creative Technology, 为您和您的公司提供一体化的服务, 与技术相比, 我们更加注重技巧. 我们的设计师以及软件工程师运用他们长期在领域内的经验和技巧来为您打造你所期望的设计, 我们努力做到让客户对每一个细节都满意。",
+	"strGraphicLong1"	: 		"我们为新成立的公司，以及正在运营中的公司却急需崭新面貌的公司提供优质经济的业务套餐。一个醒目的logo设计可以为您的业务带来奇迹般的改变，继而使您的公司脱颖而出，给潜在客户留下深刻印象。",
+	"strGraphicLong2"	:		"如果想从人群中脱颖而出，那么从名片开始就要做到与众不同。名片，不仅仅是用来交换交流方式的一种工具，它足以影响到公司在客户眼中的形象。正确从名片开始建立公司形象刻不容缓。让我们帮助您完成客制化的名片设计",
+	"strGraphicLong3"	:		"过程很简单，我们的设计师可以为您做出符合您所有生意上的特别需求的客制化海报设计。可负担的价格，统一费率，而非时薪计价。",
+	"strGraphicLong4"	:		"我们的设计师正在期待着为您创作专业高质量的宣传单",
+
+
+
+
+	"strGraphicLogoD1"  :		"两种不同设计风格",
+	"strGraphicLogoD2"	:		"三次细致修改",
+	"strGraphicLogoD3"	:		"一个最终图案, 包括印制板, 网络版等",
+	"strGraphicLogoD4"	:		"五天内完成初版设计",
+	"strGraphicLogoNoHi":		"绝无任何隐性收费!",
+	
+
+
+	"strGraphicCardD1"  :		"双面名片设计",
+	"strGraphicCardD2"	:		"1000张全彩印制",
+	"strGraphicCardD3"	:		"免费速递至指定地址",
+	"strGraphicCardD4"	:		"胖型卡",
+	"strGraphicCardD5"	:		"免费全彩印制",
+	"strGraphicCardD6"	:		"多种卡型可供选择",
+	"strGraphicCardD7"	:		"10种设计风格供选择",
+
+
+
+	"strGraphicPosterD1":		"三种不同设计风格的模板供选择",
+	"strGraphicPosterD2":		"在客户确定模板或需求更多不同风格模板之后,我们将提供不限次细节重修服务 ",
+	"strGraphicPosterD3":		"专属设计师",
+	"strGraphicPosterD4":		"五天内完成初版设计",
+	"strGraphicPosterD5":		"多次细节重修",
+	"strGraphicPosterD6":		"全额退款服务",
+
+
+
+	"strGraphicFlyerD1" :		"五种以上不同风格广告传单供选择",
+	"strGraphicFlyerD2"	:		"客户拥有全部设计权",
+	"strGraphicFlyerD3"	:		"我们还将提供全额退款服务",
+	"strGraphicFlyerD4" :		"专属设计师",
+	"strGraphicFlyerD5" :		"两套模板",
+	"strGraphicFlyerD6" :		"客户拥有全部设计权",
+	"strGraphicFlyerD7" :		"全额退款服务",
+
+
+
+	"strGraphicStart"	:		"起",
+
+
+
+
+	"strSeoShort1"		:		"配置",
+	"strSeoShort2"		:		"内容",
+	"strSeoShort3"		:		"填写",
+	"strSeoShort4"		:		"访问量",
+	"strSeoShort5"		:		"分析",
+	"strSeoShort6"		:		"本地商务",
+	"strSeoShort7"		:		"优化",
+	"strSeoShort8"		:		"社交媒体",
+	"strSeoShort9"		:		"市场",
+	"strSeoShort10"		:		"语言",
+	"strSeoShort11"		:		"翻译",
+	"strSeoShort12"		:		"全球化",
+	"strSeoShort13"		:		"搜索引擎优化",
+	"strSeoShort14"		:		"专属",
+	"strSeoShort15"		:		"客户经理",
+
+
+	"strSeoLong0"		:		"搜索引擎营销理念的基础上，为您的网站来帮助您的企业一直处于领先地位在你的行业中获得更多的品牌效益的自我营销解决方案。",
+	"strSeoService"		:		"搜索引擎优化服务",
+
+
+	"strSeoLong1"		:		"关键词研究，竞争对手比较，代码优化链路饱和，地图的创建",
+	"strSeoLong2"		:		"外站优化，网站优化，关键词分析，关键词集，有针对性的关键短语",
+	"strSeoLong3"		:		"基于谷歌分析的月度绩效报告",
+	"strSeoLong4"		:		"基于谷歌地图和本地目录的优化业务",
+	"strSeoLong5"		:		"我们创建和管理多个社会网络的个人档案，与你的客户进行促销，运行和提高“赞”",
+	"strSeoLong6"		:		"对网站进行多语言支持，以便更多搜索引擎发现",
+	"strSeoLong7"		:		"适用于谷歌和其他主流搜索引擎",
+	"strSeoLong8"		:		"专属客户经理提供直接帮助和报告",
+
+
+
+	"strSeoPlan"		:		"搜索引擎优化服务",
+	"strSeoPlan1"		:		"基本计划",
+	"strSeoPlan2"		:		"高级计划",
+	"strSeoPlan3"		:		"企业级计划",
+
+
+
+	"strSeoPlan1Des"	:		"不要错过我们的搜索引擎优化基本计划，它包括搜索引擎优化设置，市场研究，内容管理，访问量分析，和本地搜索引擎优化。",
+	"strSeoPlan2Des"	:		"我们也提供针满足中型公司需求的优质服务，包括谷歌网络大师工具，本地商务优化，社交市场优化，谷歌广告词和区域性搜索优化等。",
+	"strSeoPlan3Des"	:		"企业级计划主要针对有更高要求的企业级公司，它包括更多更加专业级别的定制功能，如全球搜索引擎优化和专属客户经理等。",
+
+
+
+	"strSeoPlan1D1"		:		"无配置费",
+	"strSeoPlan1D2"		:		"搜索引擎优化配置&市场调研",
+	"strSeoPlan1D3"		:		"搜索内容管理",
+	"strSeoPlan1D4"		:		"访问数据分析",
+	"strSeoPlan1D5"		:		"链接构建",
+	"strSeoPlan1D6"		:		"本地搜索优化",
+
+	"strSeoPlan2D1"		:		"包括全部基本计划",
+	"strSeoPlan2D2"		:		"本地提交",
+	"strSeoPlan2D3"		:		"谷歌网络大师工具",
+	"strSeoPlan2D4"		:		"本地商务优化",
+	"strSeoPlan2D5"		:		"社交市场管理",
+	"strSeoPlan2D6"		:		"谷歌广告关键词",
+	"strSeoPlan2D7"		:		"多语言支持",
+	"strSeoPlan2D8"		:		"区域化搜索引擎优化",
+
+	"strSeoPlan3D1"		:		"包括全部基本计划",
+	"strSeoPlan3D2"		:		"包括全部高级计划",
+	"strSeoPlan3D3"		:		"全球化搜索引擎优化",
+	"strSeoPlan3D4"		:		"专属客户经理"
+
+
 }
